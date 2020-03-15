@@ -28,7 +28,7 @@
             }
             .carousel__item--details {
                 background: linear-gradient( to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
-                padding: .5rem;
+                padding: 0.5rem;
                 font-size: 2.2rem;
                 opacity: 0;
                 transition: 1s opacity;
@@ -44,7 +44,7 @@
                 bottom: 4.5rem;
                 font-size: 1.2rem;
                 margin-top: 1rem;
-                padding-left: .5rem;
+                padding-left: 0.5rem;
                 opacity: 0;
                 transition: opacity 1s;
             }
@@ -57,7 +57,7 @@
                 bottom: 3rem;
                 font-size: 1.2rem;
                 margin-top: 1rem;
-                padding-left: .5rem;
+                padding-left: 0.5rem;
                 opacity: 0;
                 transition: opacity 1s;
             }

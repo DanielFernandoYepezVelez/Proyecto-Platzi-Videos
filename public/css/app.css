@@ -187,8 +187,8 @@ img {
 
 .main__global--container .section__carousel {
   display: grid;
-  grid-template-columns: repeat(11, minmax(220px, 220px));
-  grid-template-rows: repeat(1, minmax(270px, 270px));
+  grid-template-columns: repeat(11, minmax(230px, 230px));
+  grid-template-rows: repeat(1, minmax(300px, 300px));
   grid-gap: 1rem;
   margin-bottom: 1rem;
   overflow-x: scroll;
@@ -216,7 +216,7 @@ img {
 
 .main__global--container .section__carousel .carousel__div--item .carousel__item--details {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
-  padding: .5rem;
+  padding: 0.5rem;
   font-size: 2.2rem;
   opacity: 0;
   transition: 1s opacity;
@@ -234,7 +234,7 @@ img {
   bottom: 4.5rem;
   font-size: 1.2rem;
   margin-top: 1rem;
-  padding-left: .5rem;
+  padding-left: 0.5rem;
   opacity: 0;
   transition: opacity 1s;
 }
@@ -249,7 +249,7 @@ img {
   bottom: 3rem;
   font-size: 1.2rem;
   margin-top: 1rem;
-  padding-left: .5rem;
+  padding-left: 0.5rem;
   opacity: 0;
   transition: opacity 1s;
 }
