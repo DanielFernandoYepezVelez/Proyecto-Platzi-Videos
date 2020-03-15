@@ -187,8 +187,8 @@ img {
 
 .main__global--container .section__carousel {
   display: grid;
-  grid-template-columns: repeat(11, minmax(200px, 200px));
-  grid-template-rows: repeat(1, minmax(250px, 250px));
+  grid-template-columns: repeat(11, minmax(220px, 220px));
+  grid-template-rows: repeat(1, minmax(270px, 270px));
   grid-gap: 1rem;
   margin-bottom: 1rem;
   overflow-x: scroll;
