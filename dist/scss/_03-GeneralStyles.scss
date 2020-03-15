@@ -1,0 +1,27 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $fuentePrincipal;
+    font-size: $sizeFuente;
+    color: $colorBlanco;
+    background-color: $colorPrimario;
+}
+
+.container__global {
+    width: 90%;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}

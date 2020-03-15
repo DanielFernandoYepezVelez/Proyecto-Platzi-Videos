@@ -1,0 +1,76 @@
+.main__global--container {
+    padding: 0 0.5rem;
+    h2 {
+        margin-bottom: 0.5rem;
+    }
+    .section__carousel {
+        display: grid;
+        grid-template-columns: repeat(11, minmax(200px, 200px));
+        grid-template-rows: repeat(1, minmax(250px, 250px));
+        grid-gap: 1rem;
+        margin-bottom: 1rem;
+        overflow-x: scroll;
+        .carousel__div--item {
+            border-radius: 20px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: 450ms all;
+            transform-origin: center left;
+            position: relative;
+            border: solid 1px $colorBlanco;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+            &:hover~.carousel__div--item {
+                transform: translate3d(100px, 0, 0);
+            }
+            .carousel__item--details {
+                background: linear-gradient( to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+                padding: .5rem;
+                font-size: 2.2rem;
+                opacity: 0;
+                transition: 1s opacity;
+                position: absolute;
+                bottom: 6rem;
+            }
+            &:hover .carousel__item--details {
+                opacity: 1;
+            }
+            .title {
+                background: linear-gradient( to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+                position: absolute;
+                bottom: 4.5rem;
+                font-size: 1.2rem;
+                margin-top: 1rem;
+                padding-left: .5rem;
+                opacity: 0;
+                transition: opacity 1s;
+            }
+            &:hover .title {
+                opacity: 1;
+            }
+            .subtitle {
+                background: linear-gradient( to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+                position: absolute;
+                bottom: 3rem;
+                font-size: 1.2rem;
+                margin-top: 1rem;
+                padding-left: .5rem;
+                opacity: 0;
+                transition: opacity 1s;
+            }
+            &:hover .subtitle {
+                opacity: 1;
+            }
+        }
+    }
+    .section__carousel:hover .carousel__div--item {
+        opacity: 0.3;
+    }
+    .section__carousel:hover .carousel__div--item:hover {
+        transform: scale(1.5);
+        opacity: 1;
+    }
+}

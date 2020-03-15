@@ -1,0 +1,94 @@
+.header {
+    height: 70vh;
+    .header__section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 7rem;
+        .section__figure--logo {
+            @include widthLogoResponsive(150px, 200px, 250px);
+        }
+        .section__figure--profile {
+            display: flex;
+            align-items: center;
+            position: relative;
+            cursor: pointer;
+            img {
+                @include widthProfileResponsive(50px, 60px, 70px);
+            }
+            .section__span--profile {
+                display: none;
+            }
+            @include tablet {
+                .section__span--profile {
+                    display: block;
+                }
+            }
+            &:hover .section__nav {
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 2rem;
+                .nav__ul--menu {
+                    list-style: none;
+                    @include telefono {
+                        margin-top: 1.2rem;
+                    }
+                    @include tablet {
+                        margin-top: 1.5rem;
+                    }
+                    li {
+                        margin: 10% 0;
+                        text-align: end;
+                        &:first-child {
+                            text-indent: 4rem;
+                        }
+                    }
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section__nav {
+    display: none;
+}
+
+.section__hero--container {
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .hero__div--container {
+        width: 100%;
+        text-align: center;
+        h2 {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 0.5rem;
+            outline: none;
+            border: solid 3px $colorBlanco;
+            color: $colorBlanco;
+            background-color: rgb(117, 70, 236);
+            border-radius: 20px;
+        }
+        @include tablet {
+            h2 {
+                font-size: 1.5rem;
+            }
+            input[type="text"] {
+                width: 700px;
+            }
+        }
+    }
+}

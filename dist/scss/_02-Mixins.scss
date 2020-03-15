@@ -1,0 +1,58 @@
+@mixin widthLogoResponsive($widthUno, $widthDos, $widthTres) {
+    width: $widthUno;
+    @include telefono {
+        width: $widthDos;
+    }
+    @include tablet {
+        width: $widthTres;
+    }
+}
+
+@mixin widthProfileResponsive($widthUno, $widthDos, $widthTres) {
+    width: $widthUno;
+    @include telefono {
+        width: $widthDos;
+    }
+    @include tablet {
+        width: $widthTres;
+    }
+}
+
+
+/* Mixins Media Querys */
+
+
+/* Telefono Muy pequeño */
+
+@mixin iphone {
+    @media only screen and (min-width: #{$iphone}) {
+        @content;
+    }
+}
+
+
+/* Telefono */
+
+@mixin telefono {
+    @media only screen and (min-width: #{$telefono}) {
+        @content;
+    }
+}
+
+
+/* Tablet */
+
+@mixin tablet {
+    @media only screen and (min-width: #{$tablet}) {
+        @content;
+    }
+}
+
+
+/* Desktop */
+
+@mixin desktop {
+    @media only screen and (min-width: #{$desktop}) {
+        @content;
+    }
+}
